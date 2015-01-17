@@ -58,6 +58,40 @@ let travelMoney = "I've got \(cashFloat * exchangeRateFloat) in my pocket, getti
 let guysName = "Eric"
 let greetingForEric = "Hey there, \(guysName)!"
 
+// Arrays and dictionaries
+var shoppingList = ["catfish", "oregano", "Vegan cheese", "black bean pasta", "Other Tim Ferriss things"]
+shoppingList[3] = "Almond cheese"
+var anotherShoppingList = ["coat", "bag", "sweater", "clothes, in general"]
+var array = ["tickets", "to", "the", "ball"]
+array[1] = "Free tickets"
+
+var occupations = ["Malcolm":"Captain", "Kaylee":"Mechanic", "Joss":"Director"]
+occupations["Jayne"] = "Public Relations"
+
+var moreOccupations = ["Wilhelm":"Attorney", "Leonhard: Professor", "Henri":"Runner-up"]
+
+//Create an empty array or dictionary using initializer syntax 
+let emptyArray = [String]()
+let emptyDictionary = [String: Float]()
+
+shoppingList = []
+array = []
+occupations = [:]
+
+// Control flow
+let individualScores = [75, 43, 103, 87, 12]
+var teamScore = 0
+for score in individualScores {
+    if score > 50 {
+        teamScore += 3
+    } else {
+        teamScore += 1
+    }
+}
+teamScore
+
+
+
 
 
 
