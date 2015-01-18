@@ -68,7 +68,7 @@ array[1] = "Free tickets"
 var occupations = ["Malcolm":"Captain", "Kaylee":"Mechanic", "Joss":"Director"]
 occupations["Jayne"] = "Public Relations"
 
-var moreOccupations = ["Wilhelm":"Attorney", "Leonhard: Professor", "Henri":"Runner-up"]
+var moreOccupations = ["Wilhelm":"Attorney", "Leonhard: Professor", "Henri":"Public relations"]
 
 //Create an empty array or dictionary using initializer syntax 
 let emptyArray = [String]()
@@ -89,6 +89,17 @@ for score in individualScores {
     }
 }
 teamScore
+
+// You can use if and let together to work with values that might be missing.
+
+var optionalString: String? = "Hello"
+optionalString == nil
+
+var optionalName: String? = "John Appleseed"
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
 
 
 
